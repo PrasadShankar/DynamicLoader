@@ -1,0 +1,18 @@
+
+
+   /* Dynamic Loader & Plugin implementation*/
+
+ 
+  I have implemented Dynamic Loader which loads .so (or plugins) and call the respective functions within the plugin.
+  Also implemented plugin by using the CURL library for dowloading a file. 
+
+
+  As per the architecture is concerned I came up with a design where one thread is responsible for downlaoding the file
+  where the Main thread will be loading the plugin. File notification is pending , I think I have to use inotify library to 
+  implement when  new plugin comes in.  File Download percentage is pending. It can be done using the curl.  
+  Given more time will be able to complete all the functionalites. For HTTP download I have used the CURL library.
+
+
+  I have provided two makefiles for buiding the plugin and the main application.
+
+  
